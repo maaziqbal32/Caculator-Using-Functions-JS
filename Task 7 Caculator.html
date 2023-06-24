@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body style="text-align: center;">
+    <h1>Basic Calculator Using The Functions </h1>
+         <script>         
+            
+          
+            //  Operation
+         function operations (num1,num2) {                            
+               if(sign == "+"){
+               sum=num1+num2; 
+               alert(`The Sum Of ${num1} + ${num2} = ${sum}`);
+             }  
+              else if(sign == "-"){
+               diff=num1-num2;
+               alert(`The Difference Of ${num1} - ${num2} = ${diff}`);
+              }   
+              else if(sign == "*"){
+               mul=num1*num2;
+               alert(`The Multiplication Of ${num1} * ${num2} = ${mul}`);
+              } 
+              else if(sign == "/"){
+               div=num1/num2;
+               alert(`The Division Of ${num1} / ${num2} = ${div}`);
+              } 
+              else{
+               alert("Please choose The correct Operator !!!!!")
+              }
+         }
+            let a=+prompt("Please Choose The 1st Number For Operation");
+            let sign=prompt(" + , - , * , /  Please Choose any 1 of the Operator for the operation");
+            let b=+prompt("Please Choose The 2nd Number For Operation");
+            operations(a,b);
+            
+
+
+             
+
+        </script>
+</body>
+</html>
